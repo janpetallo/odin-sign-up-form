@@ -192,10 +192,15 @@ button[type="submit"]:hover {
 
     form .input-group {
         padding: 0 2rem;
+        display: block;
     }
 
     .input-container {
         margin-right: 2rem;
+    }
+
+    .input-container input {
+        width: 100%;
     }
 
     .buttons {
