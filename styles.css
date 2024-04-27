@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 
 .logo {
@@ -39,7 +39,7 @@ body {
     position: relative;
     top: 200px;
     height: 120px;
-    font-size: calc(2.5rem + 1vw);
+    font-size: calc(2rem + 1vw);
 }
 
 .logo span {
@@ -57,6 +57,27 @@ img[src="images/odin-lined.png"] {
     max-inline-size: 66ch;
 }
 
+.right-side article div:nth-child(1) {
+    margin-bottom: 3rem;
+}
+
+/* using the + combinator to select the div that comes after the article element */
+.right-side> article> div + div  {
+    margin-bottom: 6rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form div:nth-child(1) {
+    
+    font-size: calc(1.5rem + 0.5vw);
+    margin-bottom: 2rem;
+
+}
 
 
 
