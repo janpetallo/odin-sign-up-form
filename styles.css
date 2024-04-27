@@ -123,7 +123,7 @@ form .input-group {
     
 }
 
-#password:invalid, #confirm-password:invalid {
+#password:focus:invalid, #confirm-password:focus:invalid, #email:focus:invalid, #phone-number:focus:invalid{
     border: 1px solid #DC2626; /* Red */
 }
 
