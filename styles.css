@@ -1,5 +1,7 @@
 :root{
     font-size: 10px;
+    --submit-clr: #37b1f2;
+    --submit-hvr: #12a4f3;
     
 }
 
@@ -66,7 +68,7 @@ img[src="images/odin-lined.png"] {
     margin-bottom: 6rem;
 }
 
-form {
+.form-container {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -125,6 +127,36 @@ form .input-group {
     border: 1px solid #DC2626; /* Red */
 }
 
+#password:valid, #email:valid, #phone-number:valid {
+    border: 1px solid #34D399; /* Green */
+}
+
+.buttons {
+    margin: 3rem 5rem;
+    font-size: 1.2rem;
+}
+
+button[type="submit"] {
+    background-color: var(--submit-clr);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: calc(1rem + 0.5vw);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--submit-hvr)
+}
+
+.buttons a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--submit-hvr);
+    font-size: 1.2rem;
+}
 
 
 
