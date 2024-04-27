@@ -49,8 +49,8 @@ body {
 
 
 img[src="images/odin-lined.png"] {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
 }
 
 .right-side article {
@@ -158,6 +158,51 @@ button[type="submit"]:hover {
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side {
+        flex: 1 0 50%;
+    }
+
+    .right-side {
+        flex: 1 0 50%;
+    }
+
+    .logo {
+        top: 100px;
+        font-size: calc(1.5rem + 1vw);
+    }
+
+
+    .right-side article {
+        padding:  2rem;
+        padding-bottom: 0;
+    }
+
+    .form-container {
+        padding: 2rem 0;
+    }
+
+    form .roboto-medium {
+        padding: 0 2rem;
+    }
+
+    form .input-group {
+        padding: 0 2rem;
+    }
+
+    .input-container {
+        margin-right: 2rem;
+    }
+
+    .buttons {
+        margin: 3rem 2rem;
+    }
+    
+}
 
 
 
