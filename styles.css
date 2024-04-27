@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
+    
 }
 
 .logo {
@@ -55,6 +55,7 @@ img[src="images/odin-lined.png"] {
 .right-side article {
     font-size: calc(1.5rem + 0.5vw);
     max-inline-size: 66ch;
+    padding: 0 5rem;
 }
 
 .right-side article div:nth-child(1) {
@@ -69,14 +70,22 @@ img[src="images/odin-lined.png"] {
 form {
     display: flex;
     flex-direction: column;
-    
+    background-color: white;
+    width: 100%;
+    padding: 2rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 form div:nth-child(1) {
-    
+
     font-size: calc(1.5rem + 0.5vw);
     margin-bottom: 2rem;
+    padding: 0 5rem;
 
+}
+
+form div:nth-child(2) {
+    padding: 0 5rem;
 }
 
 
